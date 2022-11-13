@@ -1,5 +1,5 @@
-# Basic-HTML-Login-Form
-This is a walkthrough of building a Login Form using HTML and CSS.  
+# Basic-Student-Management System
+This is a walkthrough of building a basic Student Management System HTML, CSS and MySQL.  
 
 ## 1. IDE:
 - For this project we are going to use ```VScode``` (Visual Studio) code editor
@@ -133,4 +133,5 @@ label{
 }  
 ```
  ## So in the end our Login Page will look like this:
-<img width="1280" alt="Screenshot 2022-11-08 at 1 07 03 AM" src="https://user-images.githubusercontent.com/66726759/200393759-ed190fcc-c9f4-4f2b-9c88-0041962e70d8.png">
+<img width="1157" alt="Screenshot 2022-11-13 at 9 30 42 PM" src="https://user-images.githubusercontent.com/66726759/201529959-bc1537bc-b83b-47a7-9c00-fb59ef39d394.png">
+

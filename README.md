@@ -117,3 +117,8 @@ This is a walkthrough of building a basic Student Management System HTML, CSS an
  After implimenting the above code:
  
 <img width="1418" alt="Screenshot 2022-11-13 at 9 34 04 PM" src="https://user-images.githubusercontent.com/66726759/201530113-f56e3381-362e-4683-8bde-dab015c2bb4e.png">
+
+👉 MyClassroom Page:
+- Teachers will be able to input, delete and update student data from their respective classes in this page. 
+
+<img width="1418" alt="Screenshot 2022-11-13 at 9 38 48 PM" src="https://user-images.githubusercontent.com/66726759/201530337-3db24128-543c-4997-a3a0-81d348897eab.png">

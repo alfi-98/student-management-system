@@ -54,3 +54,66 @@ This is a walkthrough of building a basic Student Management System HTML, CSS an
  ## So in the end our Login Page will look like this:
 <img width="1157" alt="Screenshot 2022-11-13 at 9 30 42 PM" src="https://user-images.githubusercontent.com/66726759/201529959-bc1537bc-b83b-47a7-9c00-fb59ef39d394.png">
 
+## 3. Building the UI of Web Pages:
+👉 Home Page:
+- At first, we build a navbar and a sidebar for our web pages. This wll be the basic structure for all our webpages. 
+```
+ <div class="sidebar">
+            <div class="profile">
+                <img src="">
+                <h3>Teacher Name</h3>
+                <p>Teacher</p>
+            </div>
+
+            <ul>
+                <li>
+                    <!-- <a href="#" class="active"> -->
+                        <a href="#">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="item">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/MyDashboard">
+                        <span class="icon"><i class="fas fa-desktop"></i></span>
+                        <span class="item">My Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/MyClassroom">
+                        <span class="icon"><i class="fas fa-user-friends"></i></span>
+                        <span class="item">My Classroom</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/StudentDatabase">
+                        <span class="icon"><i class="fas fa-database"></i></span>
+                        <span class="item">Student Database</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/Reports">
+                        <span class="icon"><i class="fas fa-chart-line"></i></span>
+                        <span class="item">Reports</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/Admin">
+                        <span class="icon"><i class="fas fa-user-shield"></i></span>
+                        <span class="item">Admin</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/Setting">
+                        <span class="icon"><i class="fas fa-cog"></i></span>
+                        <span class="item">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+ ```
+ 
+ After implimenting the above code:
+ 
+<img width="1418" alt="Screenshot 2022-11-13 at 9 34 04 PM" src="https://user-images.githubusercontent.com/66726759/201530113-f56e3381-362e-4683-8bde-dab015c2bb4e.png">

@@ -1,0 +1,196 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="MyDashboard.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyDashboard</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="section">
+            <div class="top_navbar">
+                
+                  
+            </div>
+
+        </div>
+        <div class="sidebar">
+            <div class="profile">
+
+                <h3><%=name%></h3>
+                <p>Teacher</p>
+            </div>
+
+            <ul>
+                <li>
+                    <!-- <a href="#" class="active"> -->
+                        <div>
+                        <a href="/Home">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="item">Home</span>
+                    </a>
+                    </div>
+                   
+                </li>
+                <li>
+                    <div>
+                    <a href="/MyDashboard">
+                        <span class="icon"><i class="fas fa-desktop"></i></span>
+                        <span class="item">My Dashboard</span>
+                    </a>
+                </div>
+                </li>
+                <li>
+                    <div>
+                    <a href="/MyClassroom">
+                        <span class="icon"><i class="fas fa-user-friends"></i></span>
+                        <span class="item">My Classroom</span>
+                    </a>
+                </div>
+                </li>
+            
+                <li>
+                    <div>
+                    <a href="/StudentDatabase">
+                        <span class="icon"><i class="fas fa-database"></i></span>
+                        <span class="item">Database</span>
+                    </a>
+                    </div>
+
+                </li>
+                <li>
+                    <div>
+                    <a href="/Reports">
+                        <span class="icon"><i class="fas fa-chart-line"></i></span>
+                        <span class="item">Reports</span>
+                    </a>
+                </div>
+                </li>
+                <li>
+                    <div>
+                    <a href="/Admin">
+                        <span class="icon"><i class="fas fa-user-shield"></i></span>
+                        <span class="item">Admin</span>
+                    </a>
+                </div>
+                </li>
+                <li>
+                    <div>
+                    <a href="/Setting">
+                        <span class="icon"><i class="fas fa-cog"></i></span>
+                        <span class="item">Settings</span>
+                    </a>
+                </div>
+                </li>
+            </ul>
+        </div>
+       
+
+        <!-- Main Body -->
+       
+        <div class="main-body">
+      
+            <div class="main-container">
+                <!-- Assigned Classes -->
+                <div class="heading">
+                    <div class="head-icon">
+                        <span class="heading__title">👨🏽‍💻 Assigned Classes</span>
+                    </div>
+                <div class="cards">
+                  <div class="card card-1">
+                    <h6 class="card__title_1">Class 4</h6>
+                   
+                  </div>
+                  <div class="card card-1">
+                   
+                    <h6 class="card__title_1">Class 5</h6>
+                   
+                  </div>
+            
+                  
+        
+                </div>
+            </div>
+             
+
+            <!-- Assigned Subjects -->
+            <div class="heading">
+                <div class="head-icon">
+                <span class="heading__title">📕 Assigned Subjects</span>
+             </div>
+              <div class="cards">
+                <div class="card card-2">
+                  <h6 class="card__title_2">English</h6>
+                 
+                </div>
+                <div class="card card-2">
+                 
+                  <h6 class="card__title_2">Maths</h6>
+                 
+                </div>
+                
+              
+             
+              </div>
+            </div>
+            <div class="heading-routine">
+                <h3 class="heading__title">📝 To Do</h3>
+                
+              </div>
+
+            <!-- Class Routine -->
+            
+            <div class="container">
+                <div class="left">
+                  <form id="form">
+                  
+                    <br><br>
+                    <textarea name="" id="input" cols="30" rows="10"></textarea>
+                    <br><br>
+                    <div id="msg"></div>
+                    <button class="post-btn" type="submit">Post</button>
+                  </form>
+                </div>
+                <div class="right">
+                  <h3>Your ToDo's here</h3>
+                  <div id="posts">
+                    <div>
+                      <p>Post 1</p>
+                      <span class="options">
+                        <i onClick="editPost(this)" class="fas fa-edit"></i>
+                        <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <p>Post 2</p>
+                      <span class="options">
+                        <i onClick="editPost(this)" class="fas fa-edit"></i>
+                        <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           
+        </div>
+       
+        
+           </div> 
+           </div>
+    </div>
+    
+  <script src="/dashboard">
+
+  </script>
+</body>
+</html>
+
+
+
+    

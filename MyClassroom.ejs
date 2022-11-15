@@ -1,11 +1,11 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <link rel="stylesheet" href="MyDashboard.css">
+    <link rel="stylesheet" href="MyClassroom.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyDashboard</title>
+    <title>MyClassroom</title>
     <style>
 
     </style>
@@ -22,57 +22,74 @@
         </div>
         <div class="sidebar">
             <div class="profile">
-                <img src="https://1.bp.blogspot.com/-vhmWFWO2r8U/YLjr2A57toI/AAAAAAAACO4/0GBonlEZPmAiQW4uvkCTm5LvlJVd_-l_wCNcBGAsYHQ/s16000/team-1-2.jpg" alt="profile_picture">                <h3>Teacher Name</h3>
+
+                <h3><%=name%></h3>
                 <p>Teacher</p>
             </div>
 
             <ul>
                 <li>
                     <!-- <a href="#" class="active"> -->
-                        <a href="#">
+                        <div>
+                        <a href="/Home">
                         <span class="icon"><i class="fas fa-home"></i></span>
                         <span class="item">Home</span>
                     </a>
+                    </div>
+                   
                 </li>
                 <li>
+                    <div>
                     <a href="/MyDashboard">
                         <span class="icon"><i class="fas fa-desktop"></i></span>
                         <span class="item">My Dashboard</span>
                     </a>
+                </div>
                 </li>
                 <li>
+                    <div>
                     <a href="/MyClassroom">
                         <span class="icon"><i class="fas fa-user-friends"></i></span>
                         <span class="item">My Classroom</span>
                     </a>
+                </div>
                 </li>
             
                 <li>
+                    <div>
                     <a href="/StudentDatabase">
                         <span class="icon"><i class="fas fa-database"></i></span>
-                        <span class="item">Student Database</span>
-                    </a>
+                        <span class="item">Database</span>                    </a>
+                    </div>
+
                 </li>
                 <li>
+                    <div>
                     <a href="/Reports">
                         <span class="icon"><i class="fas fa-chart-line"></i></span>
                         <span class="item">Reports</span>
                     </a>
+                </div>
                 </li>
                 <li>
+                    <div>
                     <a href="/Admin">
                         <span class="icon"><i class="fas fa-user-shield"></i></span>
                         <span class="item">Admin</span>
                     </a>
+                </div>
                 </li>
                 <li>
+                    <div>
                     <a href="/Setting">
                         <span class="icon"><i class="fas fa-cog"></i></span>
                         <span class="item">Settings</span>
                     </a>
+                </div>
                 </li>
             </ul>
         </div>
+       
 
         <!-- Main Body -->
        
@@ -80,37 +97,22 @@
       
             <div class="main-container">
                 <!-- Assigned Classes -->
-                <div class="heading">
-                  <h3 class="heading__title">Assigned Classes</h3>
-                
-                <div class="cards">
-                  <div class="card card-1">
-                    <h6 class="card__title">Class | Section</h6>
-                   
-                  </div>
-                  <div class="card card-2">
-                   
-                    <h6 class="card__title">Class | Section </h6>
-                   
-                  </div>
-                  
-        
-                </div>
-            </div>
+               
              
 
             <!-- Assigned Subjects -->
             <div class="heading">
-                <h3 class="heading__title">Assigned Subjects</h3>
-             
+                <div class="head-icon">
+                <span class="heading__title">📕 Assigned Subjects</span>
+             </div>
               <div class="cards">
-                <div class="card card-1">
-                  <h6 class="card__title">English</h6>
+                <div class="card card-2">
+                  <h6 class="card__title_2">English</h6>
                  
                 </div>
                 <div class="card card-2">
                  
-                  <h6 class="card__title">Maths</h6>
+                  <h6 class="card__title_2">Maths</h6>
                  
                 </div>
                 
@@ -118,23 +120,53 @@
              
               </div>
             </div>
-            <div class="heading">
-                <h3 class="heading__title">Class Routine</h3>
-                </div>
-
-
-            <!-- Class Routine -->
-            
-           
-        </div>
-        
+            <div class="heading-routine">
+                <h3 class="heading__title">📝 Marks Sheet</h3>
+                     
+        <div class="table"> 
+          <table class="content-table">
+              <thead>
+                <tr>
+                  <th>id</th>
+                  <th>Name</th>
+                  <th>Section</th>
+                  <th>Marks</th>
+                  <th>Grade</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><%=id%></td>
+                  <td>Rajib</td>
+                  <td><%=section%></td>
+                  <td><%=marks%></td>
+                  <td><%=grade%></td>
+                </tr>
+                <tr class="active-row">
+                  <td>2</td>
+                  <td>Kashem</td>
+                  <td>2</td>
+                  <td>89</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Rahul</td>
+                  <td>5</td>
+                  <td>90</td>
+                  <td>A</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
             
 
       
 
+         
     </div>
-  <script>
+    
+    
 
-  </script>
 </body>
 </html>
